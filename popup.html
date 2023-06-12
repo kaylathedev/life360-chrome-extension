@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Life360 Extension</title>
+  <link type="text/css" rel="stylesheet" href="popup.css">
+  <script src="popup.js"></script>
+</head>
+
+<body>
+  <h1 id="life360-logo">Life360</h1>
+  <template class="login">
+    <h2>Login</h2>
+    <div class="messages"></div>
+    <div class="input-field">
+      <label for="login-email">Email</label>
+      <input id="login-email" type="text" name="email">
+    </div>
+    <div class="input-field">
+      <label for="login-password">Password</label>
+      <input id="login-password" type="password" name="password">
+    </div>
+    <button id="login-btn">Login</button>
+  </template>
+  <template class="dashboard">
+    <button id="logout-btn">Logout</button>
+    <h2>Dashboard</h2>
+    <div class="messages"></div>
+    <p>Hi <span class="username"></span>!</p>
+    <div id="circles"></div>
+  </template>
+  <template class="dashboard-circle">
+    <h3 class="circle-name"></h3>
+    <div class="circle-members"></div>
+  </template>
+  <template class="dashboard-circle-member">
+    <div class="member-battery">
+      <span class="battery-icon">
+        <span class="battery-icon-inside"></span>
+      </span>
+      <span class="member-battery-text"></span>
+    </div>
+    <div class="member-name"></div>
+    <div class="member-location"></div>
+    <div class="member-latlon" title="Open in Google Maps"></div>
+    <div class="member-lastupdatetime"></div>
+    <div class="member-issue"></div>
+  </template>
+  <div id="page"></div>
+</body>
+
+</html>

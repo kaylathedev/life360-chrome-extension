@@ -1,0 +1,170 @@
+html {
+  min-width: 13em;
+  padding: 9px 4px;
+}
+
+button {
+  padding: 4px 6px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+  padding: 4px;
+}
+
+.input-field label {
+  display: block;
+  padding: 6px 0;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+}
+
+#life360-logo {
+  font-style: italic;
+  font-size: 90%;
+  text-align: center;
+  margin: 0;
+}
+
+#logout-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffe9a7;
+  padding: 4px;
+  font-size: 90%;
+}
+
+#login-btn {
+  margin-top: 8px;
+}
+
+.circle-members>div {
+  border: 1px solid #000;
+  background: #f6f6f6;
+  margin-top: 8px;
+  padding: 4px;
+}
+
+.circle-members>div:nth-child(0) {
+  margin-top: 0;
+}
+
+.circle-members>div .member-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.member-battery {
+  float: right;
+  position: relative;
+}
+
+.circle-members>div .member-location {
+  flex-grow: 1;
+}
+
+.member-latlon {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.battery-icon {
+  background: black;
+  border: 1px solid black;
+  width: 2em;
+  height: 1em;
+  display: inline-block;
+  top: 0;
+  position: absolute;
+  right: 2em;
+}
+
+.battery-icon-inside {
+  display: block;
+  height: 100%;
+}
+
+/* Messages */
+
+.messages .msg-error {
+  color: red;
+}
+
+/* Battery Levels */
+
+.battery-level-0 .battery-icon-inside,
+.battery-level-1 .battery-icon-inside,
+.battery-level-2 .battery-icon-inside {
+  background: #ff5c5c;
+}
+
+.battery-level-3 .battery-icon-inside,
+.battery-level-4 .battery-icon-inside {
+  background: orange;
+}
+
+.battery-level-5 .battery-icon-inside,
+.battery-level-6 .battery-icon-inside {
+  background: yellow;
+}
+
+.battery-level-7 .battery-icon-inside,
+.battery-level-8 .battery-icon-inside,
+.battery-level-9 .battery-icon-inside,
+.battery-level-10 .battery-icon-inside {
+  background: lightgreen;
+}
+
+.battery-level-0 .battery-icon-inside {
+  width: 9%;
+}
+
+.battery-level-1 .battery-icon-inside {
+  width: 18%;
+}
+
+.battery-level-2 .battery-icon-inside {
+  width: 27%;
+}
+
+.battery-level-3 .battery-icon-inside {
+  width: 36%;
+}
+
+.battery-level-4 .battery-icon-inside {
+  width: 45%;
+}
+
+.battery-level-5 .battery-icon-inside {
+  width: 54%;
+}
+
+.battery-level-6 .battery-icon-inside {
+  width: 63%;
+}
+
+.battery-level-7 .battery-icon-inside {
+  width: 72%;
+}
+
+.battery-level-8 .battery-icon-inside {
+  width: 81%;
+}
+
+.battery-level-9 .battery-icon-inside {
+  width: 90%;
+}
+
+.battery-level-10 .battery-icon-inside {
+  width: 100%;
+}
